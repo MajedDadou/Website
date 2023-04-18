@@ -91,7 +91,8 @@ color: green;
   z-index: 1;
   background-color: #cc4100;
   border: 2px solid black;
-  border-radius: 1em;
+  border-radius: 0.5em;
+  margin-top: 70px;
 }
 
 /* Links inside the dropdown */
