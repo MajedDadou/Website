@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* ---------Header--------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 5px 10px black;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+
+    /* ----------navbar------------ */
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+header .navbar ul li a{
+   font-size: 20px;
+   padding: 20px;
+   color: #333;
+   display: block;
+    
+}
+header .navbar ul li a:hover{
+color: white;
+background-color: #333;
+}
+
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+
+}
+
+header .navbar ul li ul li{
+ width: 100%;
+    border-top: 1px solid black;
+}
+header .navbar ul li ul li ul{
+left: 200px;
+top: 0;
+
+}
+
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* -------Anchor Tag Edit--------- */
+/* a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    } */
+    a:active{
+    color: #fff;
+    }
+    a:link{
+    /* background-color: #fff; */
+    color: green;
+    text-decoration: none;
+    /* border: 5px solid red; */
+    justify-content: space-between;
+    /* I used em to make it relative to the parent font size */
+    margin: 1em;
+    }
+    a:visited{
+    color: green;
+    }
+    
+
+
+/* -----------imag and buttons */
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+#middle-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.Reserver-Bigger {
+    display: flex;
+}
+
+#Reserver {
+    /* justify-items: center; */
+    text-align: center;
+    justify-content: center;
+    /* width: 20%; */
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+
+
+/* -------Call to Action------- */
+#PoolRes {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#DinarRes {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#PoolRes:hover {
+    background-color: #cc4100;
+}
+
+#DinarRes:hover {
+    background-color: #cc4100;
+}
+
+@media only screen and (max-width: 900px) {
+    #middle-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px;
+
+    }
+
+    #Reserver {
+        flex-direction: column;
+
+    }
+
+    header{
+        padding: 20px;
+    }
+     
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid #333;
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background: #fff;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+
+        display: initial;
+    }
+
+
+}
