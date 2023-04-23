@@ -14,16 +14,17 @@
 
 <body>
 
-        <div class="topnav" id="myTopnav">
-            <img id="logo" src="images/Hajmeddig.png" alt="Logo">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="burger()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+    <div class="topnav" id="myTopnav">
+        <img id="logo" src="images/Hajmeddig.png" alt="Logo">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="burger()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
 
 
@@ -50,15 +51,15 @@
             </ul>
         </nav>
     </header> -->
-<section>
-    <video autoplay muted loop id="bg-video">
-        <source src="images/billiard video.mp4" type="video/mp4">
-    </video>
-</section>
+    <section>
+        <video autoplay muted loop id="bg-video">
+            <source src="images/billiard video.mp4" type="video/mp4">
+        </video>
+    </section>
     <!-------------Logo------------>
     <section>
         <div class="Logo-home">
-            <a href="index.html"><img id="middle-img" src="images/teenGuide logo bubbly.png" alt="teenGuide"></a>
+            <a href="index.html"><img id="middle-img" src="images/Hajmeddig.png" alt="teenGuide"></a>
         </div>
     </section>
 
@@ -72,19 +73,47 @@
         </div>
     </Section>
 
+    <!---------------------- Events ------------------------->
+
+
+    <!-- Pool Turnering section -->
+    <section>
+
+        <div id="events-holder">
+            <hr class="animated-hr">
+            <div class="events-organiser">
+                <div id="Events-title">
+                    <p>Events</p>
+                </div>
+                <div class="Events-picture-holder">
+                    <img src="images/Events-DenmarkvsSverige.png" alt="Events-DenmarkvsSverige">
+                    <div class="text-left">
+                        <h2>Text 1</h2>
+                        <h2>text1</h2>
+                      </div>
+                      <div class="text-right">
+                        <p>Danmark <br>VS <br>SVERIGE</p>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
     <script>
         function burger() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        
-  
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+
+
         }
-        </script>
+    </script>
 
 </body>
 

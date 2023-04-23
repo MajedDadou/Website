@@ -73,5 +73,10 @@ background: linear-gradient(90deg, rgba(236,28,36,1) 14%, rgba(177,50,50,1) 66%)
        #logo {
         width: 100px;
         height: 100px;
+        position: fixed;
+        top: 0%;
+        margin-left: 40px;
+        max-width: 100%;
+       
        }
     }
