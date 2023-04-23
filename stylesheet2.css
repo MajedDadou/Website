@@ -15,98 +15,6 @@ body {
     /* line-height: 1.5; */
 }
 
-/* ---------Header--------- */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    box-shadow: 0 5px 10px black;
-    padding: 0px 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 1000;
-
-}
-
-/* header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color: #333;
-
-   
-} */
-
-/* ----------navbar------------ */
-header .navbar ul {
-    list-style: none;
-}
-
-header .navbar ul li {
-    position: relative;
-    float: left;
-
-}
-
-header .navbar ul li a {
-    font-size: 20px;
-    padding: 20px;
-    color: #333;
-    display: block;
-
-}
-
-header .navbar ul li a:hover {
-    color: white;
-    background-color: #333;
-}
-
-
-header .navbar ul li ul {
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background: #fff;
-    display: none;
-
-}
-
-header .navbar ul li ul li {
-    width: 100%;
-    border-top: 1px solid black;
-}
-
-header .navbar ul li ul li ul {
-    left: 200px;
-    top: 0;
-
-}
-
-
-header .navbar ul li:focus-within>ul,
-header .navbar ul li:hover>ul {
-    display: initial;
-}
-
-#menu-bar {
-    display: none;
-}
-
-header label {
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
-    display: none;
-}
-
-
-/* -------Anchor Tag Edit--------- */
-/* a:hover{
-    color: rgb(255, 255, 255);
-    background-color: #333;
-    } */
 a:active {
     color: #fff;
 }
@@ -173,11 +81,7 @@ a:visited {
 
     height: 40vh;
     width: 100%;
-    /* position: relative; */
-    /* width: 100%; */
-    /* max-width: 100%; */
-    /* height: auto; */
-    /* z-index: -1; */
+
 
 }
 
@@ -193,13 +97,7 @@ a:visited {
     margin-left: 20%;
     margin-right: 20%;
     line-height: 115px;
-    /* font-size: xx-large;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* z-index: 1000; */
+
 }
 
 #subtitle {
@@ -233,17 +131,14 @@ a:visited {
 }
 
 .picture-holder img {
-    /* display: flex; */
-    /* justify-content: center; */
+
     width: 40vh;
     height: 30vh;
 }
 
 .image-menu {
     margin: 2% 10%;
-    /* display: flex; */
-    /* width: 100%; */
-    /* justify-items: center; */
+
 }
 
 #button {
@@ -382,13 +277,9 @@ a:visited {
 .animated-hr-nav {
     border: none;
     height: 5px;
-    /* Set the height of the HR tag */
     background-color: #000000;
-    /* Set the color of the HR tag */
     position: relative;
-    /* Set the position of the HR tag */
     animation: grow 5s ease-in-out infinite;
-    /* Set the animation for the HR tag */
 }
 #hr-background{
     background-color: #000000;
@@ -396,47 +287,36 @@ a:visited {
 .animated-hr {
     border: none;
     height: 5px;
-    /* Set the height of the HR tag */
     background-color: #e23c1f;
-    /* Set the color of the HR tag */
     position: relative;
-    /* Set the position of the HR tag */
     animation: grow 5s ease-in-out infinite;
-    /* Set the animation for the HR tag */
 }
 
 @keyframes grow {
     0% {
         width: 0%;
-        /* Set the width of the HR tag at the beginning of the animation */
+    
         left: 0;
-        /* Set the starting position of the HR tag */
+      
     }
 
     50% {
         width: 100%;
-        /* Set the width of the HR tag halfway through the animation */
+
         left: 0;
-        /* Set the position of the HR tag at the halfway point of the animation */
+
     }
 
     100% {
         width: 0%;
-        /* Set the width of the HR tag at the end of the animation */
         left: 100%;
-        /* Set the end position of the HR tag */
     }
 }
 
 
-.events-organiser {
-    /* display: flex; */
-}
-
 .Events-picture-holder {
     position: relative;
     display: inline-block;
-    /* display: flex; */
     width: 100%;
 }
 
@@ -460,7 +340,6 @@ a:visited {
 
 .text-left h2 {
     color: #fff;
-    /* margin: 1%; */
     text-shadow: 2px 2px rgb(30, 151, 70);
 
     -webkit-text-stroke: 1.5px #e23c1f;
@@ -575,10 +454,6 @@ a:visited {
     letter-spacing: 0.5px;
 }
 
-/* .name-user span {
-    color: #979797;
-    font-size: 0.8rem;
-} */
 
 .reviews {
     color: green;
@@ -725,49 +600,6 @@ a:visited {
         flex-direction: column;
 
     }
-
-    header {
-        padding: 20px;
-    }
-
-    header label {
-        display: initial;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        border-top: 1px solid #333;
-        display: none;
-    }
-
-    header .navbar ul li {
-        width: 100%;
-
-    }
-
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li {
-        background: #fff;
-    }
-
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left: 0;
-    }
-
-    #menu-bar:checked~.navbar {
-
-        display: initial;
-    }
-
 
 }
 
