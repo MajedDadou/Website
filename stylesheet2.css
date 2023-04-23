@@ -365,19 +365,34 @@ a:visited {
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
-    font-size: 160px;
+    font-size: 20vh;
     line-height: 312px;
     color: #fff;
     -webkit-text-stroke: 1.5px #e23c1f;
+    text-align: center;
 
 }
 
-#events-holder {
-    background-color: #7a5a5a;
+.events-holder {
+    background-color: #000000;
     margin-top: 700px;
 
 }
 
+.animated-hr-nav {
+    border: none;
+    height: 5px;
+    /* Set the height of the HR tag */
+    background-color: #000000;
+    /* Set the color of the HR tag */
+    position: relative;
+    /* Set the position of the HR tag */
+    animation: grow 5s ease-in-out infinite;
+    /* Set the animation for the HR tag */
+}
+#hr-background{
+    background-color: #000000;
+}
 .animated-hr {
     border: none;
     height: 5px;
@@ -446,6 +461,7 @@ a:visited {
 .text-left h2 {
     color: #fff;
     /* margin: 1%; */
+    text-shadow: 2px 2px rgb(30, 151, 70);
 
     -webkit-text-stroke: 1.5px #e23c1f;
 
@@ -458,6 +474,8 @@ a:visited {
 }
 
 .text-right p {
+    text-shadow: 2px 2px rgb(30, 151, 70);
+
     color: #fff;
     margin: 0;
     -webkit-text-stroke: 1.5px #e23c1f;
@@ -465,11 +483,158 @@ a:visited {
     font-family: 'Bebas Neue' cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 230px;
-    line-height: 276px;
-    
+    font-size: 160px;
+    line-height: 1em;
+
     text-align: center;
 }
+
+/* Reviews */
+#review {
+    background-image: url(images/Review\ Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.review-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-heading h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.review-heading span {
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.review-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.review-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong {
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* .name-user span {
+    color: #979797;
+    font-size: 0.8rem;
+} */
+
+.reviews {
+    color: green;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comment p {
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+
+.review-box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+@media(max-width:1060px) {
+    .review-box {
+        width: 45%;
+        padding: 10px;
+    }
+}
+
+@media(max-width:790px) {
+    .review-box {
+        width: 100%;
+    }
+
+    .review-heading h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:340px) {
+    .box-top {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .reviews {
+        margin-top: 10px;
+    }
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #252525;
+}
+
+
 
 /* -------Call to Action------- */
 #PoolRes {
@@ -498,6 +663,36 @@ a:visited {
 
 #DinarRes:hover {
     background-color: #cc4100;
+}
+
+
+/* Events Media */
+@media only screen and (max-width: 1100px) {
+    .Events-picture-holder {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .text-right p {
+        font-size: 3em;
+        line-height: 1em;
+
+    }
+
+    .text-left h2 {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    .text-right {}
+
+    .text-left {}
+
+    #Events-title p {
+        font-size: 10vh;
+    }
 }
 
 @media only screen and (max-width: 980px) {
